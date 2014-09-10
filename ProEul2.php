@@ -1,12 +1,12 @@
 <?php 
 	class Euler
 	{
-		public $final;
 		public function give($num, $lastnum)
 		{
 			$sum = $num + $lastnum;
 			return $sum;
 		}
+
 		public function isEven($num)
 		{
 			if ($num % 2 == 0) {
@@ -26,7 +26,6 @@
 		$sum = $obj->give($i, $sum);
 		$total = $total + $obj->isEven($i);
 		$total = $total + $obj->isEven($sum);
-
 	}
 	echo $total."<br>";
 ?>
